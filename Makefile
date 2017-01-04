@@ -15,7 +15,7 @@ OBJECTS := $(patsubst $(SRCDIR)/%,$(BUILDDIR)/%,$(SOURCES:.$(SRCEXT)=.o))
 
 CFLAGS := -g -Wall -Werror # -O3
 
-LIB :=
+LIB := -L/usr/local/boost_1_63_0/stage/lib -lboost_program_options
 INC := -I include
 
 $(TARGET): $(OBJECTS)
