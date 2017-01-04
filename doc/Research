@@ -1,0 +1,29 @@
+Research Document
+
+Question: What implementations of fractal image compression are out there?
+
+    1. GitHub @ https://github.com/c00kiemon5ter/Fractal-Image-Compression
+                                  /tree/master/lib
+        - The defaults on lena provide very poor results. Comression expands
+          a 475 KB file into a 1.1 MB file, and requires a long length of
+          time to do so.
+
+        Is c00kiemon5ter still active? Can I reach out to him about this?
+             
+    2. GitHub @ https://github.com/l-tamas/Fiasco
+        - Submitted an issue because I could not get the build to work.
+
+    3. GitHub @ https://github.com/daleobrien/fractal_mars
+        - An amazing tool for compression.
+        - Time to compress lena 512: 1.32s
+        - Time to decompress lena 512: 0.02s
+        - Compression ratio: 768K / 58K = 13.6
+
+    4. GitHub @ https://github.com/plzombie/fractal_image_compression
+        - Working tool for compression, long time to compress 512x512 lena
+        - Time to compress lena 512: 21.5 minutes!
+        - Time to decompress lena 512: 0.3s
+        - Compression ratio: 768K / 49K = 16.2
+
+    Note: I will use the fractal_mars (3) implementation to benchmark my
+          project.
