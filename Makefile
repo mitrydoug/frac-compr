@@ -13,7 +13,7 @@ SRCEXT  := cpp
 SOURCES := $(shell find $(SRCDIR) -type f -name *.$(SRCEXT))
 OBJECTS := $(patsubst $(SRCDIR)/%,$(BUILDDIR)/%,$(SOURCES:.$(SRCEXT)=.o))
 
-CFLAGS := -g -Wall -Werror # -O3
+CFLAGS := -g -std=c++11 -Wall -Werror # -O3
 
 LIB := -L/usr/local/boost_1_63_0/stage/lib -lboost_program_options
 INC := -I include
